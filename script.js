@@ -1,0 +1,11 @@
+const toggle=document.getElementById('menuToggle');
+const mobileNav=document.getElementById('mobileNav');
+toggle.addEventListener('click',()=>{const isOpen=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!isOpen));toggle.setAttribute('aria-label',isOpen?'Open menu':'Close menu');mobileNav.hidden=isOpen;});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');}));
+document.querySelectorAll('[data-place]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('destinationInput').value=a.dataset.place;}));
+document.querySelectorAll('[data-experience]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('journeySelect').value=a.dataset.experience;}));
+document.querySelectorAll('[data-package]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('destinationInput').value=a.dataset.package;}));
+document.getElementById('year').textContent=String(new Date().getFullYear());
+let inquiryText='';
+document.getElementById('inquiryForm').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);inquiryText=['SEVERORORO — Travel Inquiry (preview)','Name: '+data.get('name'),'Email: '+data.get('email'),'Destination: '+(data.get('destination')||'Not specified'),'Journey: '+(data.get('journey')||'Not specified'),'Details: '+(data.get('message')||'Not specified')].join('\n');document.getElementById('inquiryPreview').textContent=inquiryText;document.getElementById('formResult').hidden=false;document.getElementById('formResult').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});});
+document.getElementById('copyInquiry').addEventListener('click',async e=>{try{await navigator.clipboard.writeText(inquiryText);e.currentTarget.textContent='Copied!';}catch{e.currentTarget.textContent='Select the preview text to copy';}});

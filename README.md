@@ -1,48 +1,29 @@
-# 🌍 SEVERORORO | Travel & Tourism
+# SEVERORORO — Travel & Tourism
 
-### ✈️ Your Journey Begins Here
+**Your Journey Begins Here.**
 
-Welcome to **SEVERORORO**, a modern travel and tourism brand dedicated to creating unforgettable travel experiences, discovering extraordinary destinations, and helping travelers explore the world with confidence and comfort.
+An elegant, responsive travel-and-tourism concept website designed in emerald green and white for GitHub Pages.
 
----
+## Publish on GitHub Pages
 
-## 🌟 About Us
+1. Create a public repository named `severororo.github.io` under the `severororo` GitHub account.
+2. Upload `index.html` and the `assets` folder to the repository root.
+3. Open **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, branch **main**, folder **/(root)**, then save.
+4. After GitHub Pages publishes the site, visit `https://severororo.github.io/`.
 
-At **SEVERORORO**, we believe that travel is more than visiting new destinations — it is about discovering cultures, exploring breathtaking landscapes, experiencing exciting adventures, and creating memories that last a lifetime.
+## Files
 
-Our brand focuses on international tourism, personalized travel planning, vacation packages, and unique experiences designed for individuals, couples, families, and groups.
+- `index.html`: page markup and content
+- `assets/style.css`: responsive styling
+- `assets/script.js`: mobile menu and inquiry preview interactions
+- `assets/favicon.svg`: vector favicon
 
-Whether you dream of a tropical paradise, a romantic European getaway, a luxury vacation, or an exciting outdoor adventure, SEVERORORO is dedicated to making every journey special.
+## Important setup notes
 
-## ✈️ Our Services
+- This website is a **concept/demo**. Destinations, travel packages and prices are illustrative, not live bookable inventory or quotes.
+- The contact form deliberately **does not send or store data**. It generates a preview that can be copied. Connect a verified business email or a form backend before collecting actual inquiries.
+- Travel photography and Google Fonts load from third-party domains and require an internet connection. Photos are not bundled in the ZIP. Review image usage rights and replace photography as needed before commercial use.
+- No business address, testimonials, licenses, endorsements, or contact details have been fabricated.
+- The site can be hosted on any static web host. No build step is required.
 
-- 🌎 **International Travel** — Explore extraordinary destinations around the world.
-- 🏝️ **Vacation Packages** — Discover exciting vacation experiences tailored to different travel preferences.
-- 🏨 **Hotels & Resorts** — Accommodation planning and resort experiences.
-- 🧳 **Personalized Itineraries** — Travel plans designed around your interests, preferences, and budget.
-- 🚗 **Transportation Coordination** — Travel transportation planning and logistics.
-- 🏔️ **Adventure Tourism** — Outdoor activities, nature exploration, and exciting adventures.
-- 💎 **Luxury Getaways** — Premium vacation experiences and exclusive destinations.
-- ❤️ **Romantic Escapes** — Memorable experiences for couples and special celebrations.
-
-## 🎯 Our Mission
-
-To inspire travelers to discover the beauty of the world by offering personalized tourism solutions, exceptional customer experiences, and thoughtfully designed travel opportunities.
-
-We aim to make every journey comfortable, enjoyable, and unforgettable.
-
-## 🔭 Our Vision
-
-To become a recognized and trusted travel and tourism brand known for innovation, reliability, exceptional service, and a passion for global exploration.
-
-## 💚 Why Choose SEVERORORO?
-
-- ✅ Personalized travel experiences
-- ✅ Inspiring international destinations
-- ✅ Flexible vacation planning
-- ✅ Modern tourism solutions
-- ✅ Customer-focused service
-- ✅ A passion for exploration
-- ✅ Commitment to quality and convenience
-
-## 🗺️ Explore Our
+© 2026 SEVERORORO. All rights reserved.
